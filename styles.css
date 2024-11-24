@@ -1,0 +1,217 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; 
+    color: #fff; 
+}
+
+/* Style for loading page */
+.loader-container {
+    text-align: center;
+}
+
+.loader-container p {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.status-bar {
+    width: 200px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    animation: load 3s ease-in-out forwards;
+    border-radius: 5px;
+}
+
+@keyframes load {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* Style for signin page */
+.signin-container {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.signin-container h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    padding: 15px; 
+    margin-top: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #555; 
+    color: #fff; 
+    cursor: pointer; 
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #777; 
+}
+
+/* Style for register page */
+.register-container {
+    width: 300px; 
+    text-align: center; 
+}
+
+.register-container h1 {
+    font-size: 1.8em; 
+    margin-bottom: 20px; 
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #fff; 
+    border-radius: 5px; 
+    background-color: #333; 
+    color: #fff; 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+button {
+    padding: 15px; 
+    margin-top: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #555; 
+    color: #fff; 
+    cursor: pointer; 
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #777; 
+}
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for bill page */
+.bill-container {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+  }
+  
+  .bill-details {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bill-details p {
+    margin: 10px 0;
+  }
+  
+  .return-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .return-button:hover {
+    background-color: #ccc;
+  }
+  
+/* Style for timetable page */
+.timetable-container {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+  }
+  
+  .timetable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .timetable th, .timetable td {
+    padding: 12px;
+    border: 1px solid #555;
+  }
+  
+  .timetable th {
+    background-color: #444;
+    font-weight: bold;
+  }
+  
+  .timetable tr:nth-child(even) {
+    background-color: #555;
+  }
+  
